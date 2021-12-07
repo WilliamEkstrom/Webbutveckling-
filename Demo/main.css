@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Besley:ital@1&display=swap');
+
+
+* {
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Besley', serif;
+}
+
+:root {
+    --main-color: #212054;
+    --complementar: #000;
+}
+
+body {
+    min-height: 100vh;
+    max-width: 100vw;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: 2rem;
+    background-color: var(--complementar);
+}
+
+aside ul {
+    list-style: none;
+}
+
+main {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-auto-flow: column;
+}
+
+.product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+
+.product-card {
+    width: 200px;
+    border-radius: auto;
+    border: #212054;
+    border-style: double;
+    
+}
+
+.product-card img {
+    width: 100%;
+}
+
+footer {
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    padding: 3rem 0 3rem 0;
+    background-color: var(--main-color);
+    color: var(--complementar);
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer a {
+    color: var(--complementar);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
